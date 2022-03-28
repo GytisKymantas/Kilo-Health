@@ -1,0 +1,23 @@
+@import "../../../styles/base";
+
+.hero__header {
+}
+
+.hero__paragraph {
+}
+
+.hero__trial {
+  color: $color-orange;
+  margin-bottom: 16px;
+}
+
+.security__paragraph {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+  }
+}

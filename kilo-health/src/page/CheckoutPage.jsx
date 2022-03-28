@@ -1,12 +1,15 @@
 import React from "react";
 import HeaderContainer from "../components/molecules/HeaderContainer/HeaderContainer";
-import SubscriptionBox from "../components/atoms/SubscriptionBox/SubscriptionBox";
+import SubscriptionContainer from "../components/molecules/SubscriptionContainer/SubscriptionContainer";
+import "./checkout-page.scss";
 
 const CheckoutPage = () => {
   return (
     <div>
       <HeaderContainer />
-      <SubscriptionBox />
+      <div className="checkout__page">
+        <SubscriptionContainer />
+      </div>
     </div>
   );
 };
