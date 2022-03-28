@@ -11,6 +11,12 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    height: 20px;
+    padding-top: 18px;
+
+    .monthly-plan {
+      letter-spacing: -0.4px;
+    }
 
     .discount-price {
       background: $color-yellow;
@@ -25,15 +31,26 @@
   &--main {
     display: flex;
     justify-content: space-between;
+    height: 24px;
+    margin-top: 10px;
+
     .large-price {
       font-size: $font-size-bigger;
       font-weight: $font-weight-bold;
       line-height: 32px;
       margin-right: 4px;
     }
+
+    .tickbox {
+      margin-right: 18px;
+      display: flex;
+      align-items: center;
+    }
   }
 
   &--footer {
+    height: 20px;
+    margin-bottom: 16px;
     .highlighted-price {
       color: $color-orange;
     }
