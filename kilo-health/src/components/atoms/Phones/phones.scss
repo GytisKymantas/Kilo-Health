@@ -4,4 +4,22 @@
   // background-image: url("../../../assets/diagonal.svg");
   width: 375px;
   height: 433px;
+  position: relative;
+
+  &--1 {
+    img {
+      position: absolute;
+      top: -33px;
+      left: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  &--2 {
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
 }

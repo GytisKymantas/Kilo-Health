@@ -16,7 +16,7 @@ const SubscriptionContainer: React.FC<ISubscriptionContainer> = ({
   const subscriptions = SubscriptionBoxData;
   console.log(subscriptions);
   return (
-    <div>
+    <div className="subscriptions">
       {displayTitle && (
         <span>
           Over <strong>52 147</strong> plans ordered

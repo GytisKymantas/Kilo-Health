@@ -5,8 +5,11 @@ import  "./discount-header.scss";
 const DiscountHeader = () => {
     return(
         <div className="discount__container header">
+            <div>
             <img src={PriceTag} alt="pricetag" />
-            <p>50% discount only valid for 24:00 </p>
+
+            </div>
+            <p>50% discount only valid for 00:24:00 </p>
         </div>
     );
 };
