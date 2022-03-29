@@ -3,13 +3,20 @@ import "./frequently-asked-question.scss";
 import ArrowUp from "../../../assets/arrowup.svg";
 import ArrowDown from "../../../assets/arrowdown.svg";
 
-const FrequentlyAskedQuestion = () => {
+interface IFrequentlyAskedQuestion {
+  question: string,
+  answer: string,
+}
+
+const FrequentlyAskedQuestion:React.FC<IFrequentlyAskedQuestion> = ({question,answer}) => {
+
   const [clicked, setClicked] = useState(false);
+ 
 
   return (
     <div className="frequently-asked-question__container">
       <div className="question">
-        <h4>What happens after I order?</h4>
+        <h4>{question}</h4>
         {clicked ? (
           <img onClick={()=>setClicked(!clicked)} src={ArrowUp} alt="arrowup" />
         ) : (
@@ -17,9 +24,7 @@ const FrequentlyAskedQuestion = () => {
         )}
       </div>
       <p>
-        After you place your order, we get to work! Based on the questions you
-        answered in the quiz, we'll craft your personal plan to your level with
-        recommendations on how to improve.
+        {answer}
       </p>
     </div>
   );

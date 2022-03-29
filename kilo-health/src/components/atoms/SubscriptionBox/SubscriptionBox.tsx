@@ -3,11 +3,19 @@ import "./subscription-box.scss";
 import TickBox from "../../../assets/tickbox.svg";
 import TickBoxGray from "../../../assets/tickboxgray.svg";
 
+interface ISubscriptionBox {
+  plan: string | null;
+  total: number | null;
+  month:string | null;
+  discount: string | null;
+  new_total?: number | null;
+  oldvalue: number | null;
+  new_month?: string | null;
+}
 
-
-const SubscriptionBox = () => {
+const SubscriptionBox:React.FC<ISubscriptionBox> = ({discount,month,total,oldvalue,plan,new_month,new_total}) => {
   const [selected, setSelected] = useState(false);
-
+  
   return (
     <div
       onClick={() => setSelected(!selected)}
@@ -19,14 +27,14 @@ const SubscriptionBox = () => {
       }
     >
       <div className="subscription-box--header">
-        <p className="monthly-plan">6 month plan</p>
+        <p className="monthly-plan">{plan}</p>
         <div className="discount-wrapper">
-          <span className="discount-price">Save 50%</span>
+          <span className="discount-price">{discount}</span>
         </div>
       </div>
       <div className="subscription-box--main">
         <div>
-          <span className="large-price">&#x24;9.99</span>/month
+          <span className="large-price">&#x24;{total}</span>/{month}
         </div>
         <div className="tickbox">
           {selected ? (
@@ -38,9 +46,8 @@ const SubscriptionBox = () => {
       </div>
       <div className="subscription-box--footer">
         <p>
-          <s className="crossed-price">&#36;119.94</s>
-          <span className="highlighted-price">&#36;59.94</span> billed every 6
-          months
+          <s className="crossed-price">&#36;{oldvalue}</s>
+          <span className="highlighted-price">&#36;{new_total}</span> {new_month}
         </p>
       </div>
     </div>
