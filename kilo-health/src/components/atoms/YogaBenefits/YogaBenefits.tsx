@@ -10,7 +10,7 @@ const YogaBenefits: React.FC<IYogaBenefits> = ({ text }) => {
   return (
     <div className="yoga__benefits">
       <img src={GreenTick} alt="greentick" />
-      <p>{text}</p>
+      <p className="yoga__benefits--text">{text}</p>
     </div>
   );
 };

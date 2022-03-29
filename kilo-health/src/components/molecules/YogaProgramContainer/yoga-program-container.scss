@@ -1,0 +1,12 @@
+@import "../../../styles/base";
+
+.program {
+  margin-top: 40px;
+
+  &__header {
+    margin-bottom: 24px;
+  }
+}
+.yoga-program:first-of-type {
+  margin-bottom: 20px;
+}

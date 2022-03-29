@@ -3,7 +3,6 @@
 .button__container {
   display: flex;
   justify-content: center;
-  margin: 16px 0;
 
   .button {
     border: none;
@@ -13,7 +12,9 @@
     min-width: 343px;
     height: 56px;
     padding: 8px 40px;
+    margin-top: 38px;
     color: #ffffff;
+    cursor: pointer;
 
     font-style: normal;
     font-weight: 7$font-weight-bold;

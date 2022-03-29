@@ -19,19 +19,22 @@ const SubscriptionContainer = () => {
         Choose your plan and get{" "}
         <span className="hero__trial">7 days free trial</span>
       </p>
-      {subscriptions.map((sub, i) => {
-        return (
-        <SubscriptionBox
-          key={i}
-          discount={sub.discount}
-          month={sub.price.month}
-          total={sub.price.total}
-          oldvalue={sub.oldvalue}
-          plan={sub.plan}
-          new_month={sub.newvalue.new_month}
-          new_total={sub.newvalue.new_total}
-        />);
-      })}
+      <div className="subscription-boxes">
+        {subscriptions.map((sub, i) => {
+          return (
+            <SubscriptionBox
+              key={i}
+              discount={sub.discount}
+              month={sub.price.month}
+              total={sub.price.total}
+              oldvalue={sub.oldvalue}
+              plan={sub.plan}
+              new_month={sub.newvalue.new_month}
+              new_total={sub.newvalue.new_total}
+            />
+          );
+        })}
+      </div>
       <Button />
       <p className="security__paragraph">
         After 7 days free trial subscription payment is automatically charged

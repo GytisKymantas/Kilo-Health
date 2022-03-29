@@ -2,7 +2,7 @@ import Apple from "./assets/apple.svg";
 import Shoe from "./assets/shoe.svg";
 import SmartWatch from "./assets/smartwatch.svg";
 import Whistle from "./assets/whistle.svg";
-import LeaningMan from "./assets/leaningman.svg";
+import Exercise from "./assets/exercise.svg";
 import BookCheck from "./assets/bookcheck.svg";
 import Brochure from "./assets/brochure.svg";
 import App from "./App";
@@ -59,7 +59,7 @@ export const ProgramContentsData = [
     subtitle: "Completely safe and focused on your key goals",
   },
   {
-    icon: LeaningMan,
+    icon: Exercise,
     title: "Easy & enjoyable yoga workouts for your level",
     subtitle: "Program adjusts to your level and pace",
   },
@@ -124,7 +124,7 @@ export const FrequentlyAskedQuestionData = [
   {
     question: "Where can I access my plan?",
     answer:
-      "Your plan will be accessible in Positive Yoga's web app with a special link generated after your purchase.",
+      "Your plan will be accessible in Positive Yoga web app with a special link generated after your purchase.",
   },
   {
     question: "How can I cancel my subscription?",

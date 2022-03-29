@@ -28,9 +28,9 @@ const SubscriptionBox:React.FC<ISubscriptionBox> = ({discount,month,total,oldval
     >
       <div className="subscription-box--header">
         <p className="monthly-plan">{plan}</p>
-        <div className="discount-wrapper">
+        {discount && <div className="discount-wrapper">
           <span className="discount-price">{discount}</span>
-        </div>
+        </div>}
       </div>
       <div className="subscription-box--main">
         <div>
@@ -45,10 +45,10 @@ const SubscriptionBox:React.FC<ISubscriptionBox> = ({discount,month,total,oldval
         </div>
       </div>
       <div className="subscription-box--footer">
-        <p>
+        {oldvalue ? <p>
           <s className="crossed-price">&#36;{oldvalue}</s>
           <span className="highlighted-price">&#36;{new_total}</span> {new_month}
-        </p>
+        </p> : <p>Billed monthly</p>}
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import YogaBenefits from "../../atoms/YogaBenefits/YogaBenefits";
 import { YogaBenefitsData } from "../../../../src/data";
+import "./yoga-benefits-container.scss";
 
 const YogaBenefitsContainer = () => {
   const benefits = YogaBenefitsData;
