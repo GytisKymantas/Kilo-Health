@@ -2,14 +2,15 @@ import React from "react";
 import "./yoga-benefits.scss";
 import GreenTick from "../../../assets/greentick.svg";
 
+interface IYogaBenefits {
+  text: string;
+}
 
-const YogaBenefits = () => {
+const YogaBenefits: React.FC<IYogaBenefits> = ({ text }) => {
   return (
     <div className="yoga__benefits">
-        <img src={GreenTick} alt="greentick" />
-        <p>
-            Each program adapts to your age or fitness level
-        </p>
+      <img src={GreenTick} alt="greentick" />
+      <p>{text}</p>
     </div>
   );
 };

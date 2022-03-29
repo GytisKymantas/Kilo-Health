@@ -1,13 +1,12 @@
 @import "../../../styles/base";
 
 .frequently-asked-question__container {
-  width: 343px;
   border-radius: 16px;
   border: 1px solid rgba(0, 0, 0, 0.08);
   padding: 0 16px 16px 16px;
 }
 
 .question {
-  display: Flex;
+  display: flex;
   justify-content: space-between;
 }

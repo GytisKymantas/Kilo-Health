@@ -1,3 +1,15 @@
+import Apple from "./assets/apple.svg";
+import Shoe from "./assets/shoe.svg";
+import SmartWatch from "./assets/smartwatch.svg";
+import Whistle from "./assets/whistle.svg";
+import LeaningMan from "./assets/leaningman.svg";
+import BookCheck from "./assets/bookcheck.svg";
+import Brochure from "./assets/brochure.svg";
+import App from "./App";
+
+
+
+
 export const SubscriptionBoxData = [
   {
     plan: "6 month plan",
@@ -40,42 +52,42 @@ export const SubscriptionBoxData = [
   },
 ];
 
-export const ProgramContents = [
+export const ProgramContentsData = [
   {
-    img: "/static/media/pricetag.d2f2f58b0e90c4c9b20866c47cc97263.svg",
+    icon: Brochure,
     title: "A personalized yoga program",
     subtitle: "Completely safe and focused on your key goals",
   },
   {
-    img: "",
+    icon: LeaningMan,
     title: "Easy & enjoyable yoga workouts for your level",
     subtitle: "Program adjusts to your level and pace",
   },
   {
-    img: "",
+    icon: Shoe,
     title: "No special preparation needed",
     subtitle:
       "Perfect for begginners! Requires no special preparation or equipment",
   },
   {
-    img: "",
+    icon: Apple,
     title: "Daily motivation & accountability",
     subtitle:
       "Track your progress, develop a healthy routine, reach goals faster",
   },
   {
-    img: "",
+    icon: Whistle,
     title: "Browse from various yoga challenges",
     subtitle:
       "30 d morning yoga, mindful yoga, back flexibility challenge, and more!",
   },
   {
-    img: "",
+    icon: SmartWatch,
     title: "Easy access on any device",
     subtitle: "Do your yoga anywhere across all types of devices",
   },
   {
-    img: "",
+    icon: BookCheck,
     title: "A complete guide to get started",
     subtitle:
       "Best tips, guidelines, advice, and recommendations for successful practice",
@@ -146,4 +158,4 @@ export const YogaBenefitsData = [
   {
     text: "Extra attention to muscle, join and back health"
   },
-]
+];

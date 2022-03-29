@@ -3,7 +3,10 @@ import Phones from "../../atoms/Phones/Phones";
 
 const PhonesContainer = () => {
   return (
-    <div><Phones /></div>
+    <div>
+      <h3>Start your yoga journey now!</h3>
+      <Phones />
+      </div>
   );
 };
 
