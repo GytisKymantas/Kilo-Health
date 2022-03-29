@@ -4,6 +4,7 @@ import SubscriptionContainer from "../components/molecules/SubscriptionContainer
 import YogaBenefitsContainer from "../components/molecules/YogaBenefitsContainer/YogaBenefitsContainer";
 import YogaProgramContainer from "../components/molecules/YogaProgramContainer/YogaProgramContainer";
 import SliderCardContainer from "../components/organisms/SliderCardContainer/SliderCardContainer";
+import FrequentlyAskedQuestionContainer from "../components/molecules/FrequentlyAskedQuestionContainer/FrequentlyAskedQuestionContainer";
 import Button from "../components/atoms/Button/Button";
 import "./checkout-page.scss";
 
@@ -17,6 +18,9 @@ const CheckoutPage = () => {
         <SliderCardContainer />
         <Button />
         <YogaBenefitsContainer />
+        <FrequentlyAskedQuestionContainer />
+        <Button />
+        <SubscriptionContainer />
       </div>
     </div>
   );
