@@ -6,15 +6,27 @@ import { SubscriptionBoxData } from "../../../../src/data";
 
 import "./subscription-container.scss";
 
-const SubscriptionContainer = () => {
+interface ISubscriptionContainer {
+  displayTitle: boolean;
+}
+
+const SubscriptionContainer: React.FC<ISubscriptionContainer> = ({
+  displayTitle,
+}) => {
   const subscriptions = SubscriptionBoxData;
   console.log(subscriptions);
   return (
     <div>
-      <span>
-        Over <strong>52 147</strong> plans ordered
-      </span>
-      <h1 className="hero__header">Get access to your yoga program now!</h1>
+      {displayTitle && (
+        <span>
+          Over <strong>52 147</strong> plans ordered
+        </span>
+      )}
+      {displayTitle ? (
+        <h1 className="hero__header">Get access to your yoga program now!</h1>
+      ) : (
+        <h2 className="hero__header--two">Start your yoga program today!</h2>
+      )}
       <p className="hero__paragraph">
         Choose your plan and get{" "}
         <span className="hero__trial">7 days free trial</span>

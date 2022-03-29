@@ -14,14 +14,14 @@ const CheckoutPage = () => {
     <div>
       <HeaderContainer />
       <div className="checkout__page">
-        <SubscriptionContainer />
+        <SubscriptionContainer displayTitle={true} />
         <YogaProgramContainer />
         <SliderCardContainer />
-        <Button />
+        <Button displayButton={true} />
         <YogaBenefitsContainer />
         <PhonesContainer />
         <FrequentlyAskedQuestionContainer />
-        <Button />
+        <Button displayButton={true} />
         <SubscriptionContainer />
         <YogaProgramContainer />
       </div>

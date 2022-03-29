@@ -1,6 +1,7 @@
 import React from "react";
 import YogaProgram from "../../atoms/YogaProgram/YogaProgram";
 import { ProgramContentsData } from "../../../../src/data";
+import "./yoga-program-container.scss";
 
 
 const YogaProgramContainer = () => {
@@ -9,7 +10,7 @@ const YogaProgramContainer = () => {
 
   return (
     <div className="program">
-      <h3>What's in my program?</h3>
+      <h3 className="program__header">What's in my program?</h3>
       {contents.map((content,idx)=>{
         return (
           <YogaProgram key={idx} icon={content.icon} title={content.title} subtitle={content.subtitle} />

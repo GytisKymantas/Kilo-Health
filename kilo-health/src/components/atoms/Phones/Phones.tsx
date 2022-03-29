@@ -1,15 +1,14 @@
 import React from "react";
 import "./phones.scss";
-import PhoneLeft from "../../../assets/phoneleft.svg";
-import PhoneRight from "../../../assets/phoneright.svg";
+import DoublePhone from "../../../assets/doublephone.svg";
+
 
 
 
 const Phones = () => {
   return (
     <div className="phones__container">
-        <img src={PhoneLeft} alt="leftPhone" />
-        <img src={PhoneRight} alt="RightPhone" />
+        <img src={DoublePhone} alt="phones" />
     </div>
   );
 };

@@ -159,3 +159,8 @@ export const YogaBenefitsData = [
     text: "Extra attention to muscle, join and back health"
   },
 ];
+
+// export const PurchaseHeaderData = [
+//   {
+//   }
+// ]
