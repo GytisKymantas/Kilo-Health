@@ -1,28 +1,32 @@
 import React from "react";
 import YellowStar from "../../../assets/yellowstar.svg";
-import LadyInBlue from "../../../assets/ladyinblue.svg";
+import { YellowStarData } from "../../../data";
 import "./slider-card.scss";
 
+const stars = YellowStarData;
 
-const SliderCard = () => {
+interface ISliderCard {
+name:string,
+address:string,
+image:string,
+text:string,
+index?:number
+}
+
+const SliderCard:React.FC<ISliderCard> = ({name,address,image,text,index}) => {
   return (
     <div className="slider__card">
-        <span className="slider__card--title">Emily, 28</span>
-        <address className="slider__card--address">Delaware, NJ</address>
+        <span className="slider__card--title">{name}</span>
+        <address className="slider__card--address">{address}</address>
         <div className="stars">
-            <img src={YellowStar} alt="yellowstar"/>      
-            <img src={YellowStar} alt="yellowstar"/>
-            <img src={YellowStar} alt="yellowstar"/>      
-            <img src={YellowStar} alt="yellowstar"/>
-            <img src={YellowStar} alt="yellowstar"/>
+          {stars.map((star)=> {
+            return (
+              <img key={star} src={YellowStar} alt="yellowstar"/>  
+            );
+          })}            
         </div>
-        <img src={LadyInBlue} alt="ladyinblue" />
-        <p className="slider__card--paragraph">I have been using this program for 3 months now
-            and it helped me to lose 16lbs, taught me how to brethe
-            properly and now I look forward to my workout. Great
-            challenges for different problem zones. Definitely 
-            recommend to anyone that wants to lose weight and feel better 
-            without long hour at the gym or exhausting workouts.
+        <img src={image} alt="ladyinblue" />
+        <p className="slider__card--paragraph">{text}
         </p>
     </div>
   );
