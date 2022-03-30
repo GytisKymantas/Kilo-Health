@@ -6,6 +6,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
+  text-align: center;
 }
 
 .slider {
@@ -15,4 +16,16 @@
   //   display: flex;
   //   margin-top: 100px;
   // }
+}
+.slider--hidden {
+  margin-top: 48px;
+}
+
+.slider__header--hidden-wrapper {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.slider__card--hidden {
+  min-width: 319px;
 }

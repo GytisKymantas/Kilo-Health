@@ -1,7 +1,7 @@
 import React from "react";
 import "./frequently-asked-question-container.scss";
 import FrequentlyAskedQuestion from "../../atoms/FrequentlyAskedQuestion/FrequentlyAskedQuestion";
-import { FrequentlyAskedQuestionData } from "../../../../src/data";
+import { FrequentlyAskedQuestionData } from "./FrequentyAskedQuestionData";
 
 const FrequentlyAskedQuestionContainer = () => {
   const questions = FrequentlyAskedQuestionData;

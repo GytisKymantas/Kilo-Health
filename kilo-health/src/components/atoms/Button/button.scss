@@ -6,9 +6,11 @@
   margin-left: 16px;
   margin-right: 16px;
 }
+
 .button--two {
   margin-top: 16px !important;
 }
+
 .button {
   border: none;
   background: $color-orange;
@@ -31,7 +33,7 @@
     background-color: darken($color-orange, 20%);
   }
 
-  &:active {
-    background-color: darken($color-orange, 40%);
+  &:focus {
+    background-color: $color-orange;
   }
 }

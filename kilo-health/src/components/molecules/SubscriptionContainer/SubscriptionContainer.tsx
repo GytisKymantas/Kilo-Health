@@ -2,31 +2,19 @@ import React from "react";
 import SubscriptionBox from "../../atoms/SubscriptionBox/SubscriptionBox";
 import Button from "../../atoms/Button/Button";
 import SafetyGuarantee from "../../../assets/safetyguarantee.svg";
-import { SubscriptionBoxData } from "../../../../src/data";
+import { SubscriptionBoxData } from "./subscriptionBoxData";
+// import SubscriptionTitle from "../../atoms/SubscriptionTItle/SubscriptionTitle";
 
 import "./subscription-container.scss";
 
-interface ISubscriptionContainer {
-  displayTitle: boolean;
-}
 
-const SubscriptionContainer: React.FC<ISubscriptionContainer> = ({
-  displayTitle,
-}) => {
+
+const SubscriptionContainer = () => {
   const subscriptions = SubscriptionBoxData;
-  console.log(subscriptions);
+  // console.log(subscriptions);
   return (
     <div className="subscriptions">
-      {displayTitle && (
-        <span>
-          Over <strong>52 147</strong> plans ordered
-        </span>
-      )}
-      {displayTitle ? (
-        <h1 className="hero__header">Get access to your yoga program now!</h1>
-      ) : (
-        <h2 className="hero__header--two">Start your yoga program today!</h2>
-      )}
+      {/* <SubscriptionTitle displayTitle={true} /> */}
       <p className="hero__paragraph">
         Choose your plan and get{" "}
         <span className="hero__trial">7 days free trial</span>

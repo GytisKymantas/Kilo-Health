@@ -2,7 +2,7 @@ import React from "react";
 import "./slider-bullets.scss";
 import SliderBulletBlank from "../../../assets/blankbullet.svg";
 import SliderBulletFull from "../../../assets/bullet.svg";
-import { BulletArrayData } from "../../../data";
+import { BulletArrayData } from "./BulletArrayData";
 
 const bullets = BulletArrayData;
 

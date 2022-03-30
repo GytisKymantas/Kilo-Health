@@ -6,6 +6,9 @@ import YogaProgramContainer from "../components/molecules/YogaProgramContainer/Y
 import SliderCardContainer from "../components/organisms/SliderCardContainer/SliderCardContainer";
 import FrequentlyAskedQuestionContainer from "../components/molecules/FrequentlyAskedQuestionContainer/FrequentlyAskedQuestionContainer";
 import PhonesContainer from "../components/molecules/PhonesContainer/PhonesContainer";
+import SubscriptionTitle from "../components/atoms/SubscriptionTitle/SubscriptionTitle";
+import SliderCardContainerHidden from "../components/organisms/SliderCardContainerHidden/SliderCardContainerHidden";
+
 import Button from "../components/atoms/Button/Button";
 import "./checkout-page.scss";
 
@@ -14,16 +17,29 @@ const CheckoutPage = () => {
     <div>
       <HeaderContainer />
       <div className="checkout__page">
-        <SubscriptionContainer displayTitle={true} />
-        <YogaProgramContainer />
-        <SliderCardContainer />
+        <SubscriptionTitle displayTitle={true} />
+        <div className="hero__grid">
+          <SubscriptionContainer displayTitle={true} />
+          <YogaProgramContainer />
+        </div>
+        <div className="slide-container__visible">
+          <SliderCardContainer />
+        </div>
+        <div className="slide-container__hidden">
+          <SliderCardContainerHidden />
+        </div>
         <Button displayButton={true} />
-        <YogaBenefitsContainer />
-        <PhonesContainer />
+        <div className="main__grid">
+          <YogaBenefitsContainer />
+          <PhonesContainer />
+        </div>
         <FrequentlyAskedQuestionContainer />
         <Button displayButton={true} />
-        <SubscriptionContainer />
-        <YogaProgramContainer />
+        <SubscriptionTitle />
+        <div className="hero__grid hero__grid--bottom">
+          <SubscriptionContainer />
+          <YogaProgramContainer />
+        </div>
       </div>
     </div>
   );

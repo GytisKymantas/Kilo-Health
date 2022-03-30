@@ -1,6 +1,6 @@
 import React from "react";
 import YogaProgram from "../../atoms/YogaProgram/YogaProgram";
-import { ProgramContentsData } from "../../../../src/data";
+import { ProgramContentsData } from "./ProgramContentsData";
 import "./yoga-program-container.scss";
 
 

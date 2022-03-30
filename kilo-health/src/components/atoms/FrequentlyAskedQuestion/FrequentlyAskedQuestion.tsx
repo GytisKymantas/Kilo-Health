@@ -13,9 +13,6 @@ const FrequentlyAskedQuestion: React.FC<IFrequentlyAskedQuestion> = ({
   answer,
 }) => {
   const [clicked, setClicked] = useState(false);
-
-//   const str = (answer.replace(/Positive Yoga/g, "<b>PositiveYoga</b>"));
-// console.log(str,"str");
   return (
     <div className="frequently-asked-question__container" onClick={() => setClicked(!clicked)}>
       <div className="question">
@@ -34,7 +31,7 @@ const FrequentlyAskedQuestion: React.FC<IFrequentlyAskedQuestion> = ({
           />
         )}
       </div>
-      {!clicked && <p>{answer}</p>}
+      {!clicked &&<p>{answer}</p> }
     </div>
   );
 };

@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import SliderCard from "../../molecules/SliderCard/SliderCard";
 import "./slider-card-container.scss";
 import SliderBullets from "../../atoms/SliderBullets/SliderBullets";
-import { SliderCardData } from "../../../data";
+import { SliderCardData } from "./SliderCardData";
 
 const slider = SliderCardData;
-console.log(slider);
+// console.log(slider);
 
 const SliderCardContainer = () => {
   const [index, setIndex] = useState(0);
@@ -13,17 +13,15 @@ const SliderCardContainer = () => {
   useEffect(() => {
     const timeout = setTimeout(
       () => setIndex(index === 2 ? index - 2 : index + 1),
-      3000
+      5000
     );
 
     return () => clearTimeout(timeout);
   }, [index]);
-  console.log(index);
 
   return (
     <div className="slider">
       <h2 className="slider__header">Hear success stories from our clients</h2>
-
       {slider && (
         <SliderCard
           index={index}
@@ -33,7 +31,6 @@ const SliderCardContainer = () => {
           text={slider[index].text}
         />
       )}
-
       <SliderBullets index={index} />
     </div>
   );
