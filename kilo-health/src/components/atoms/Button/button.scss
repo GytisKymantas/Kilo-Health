@@ -33,7 +33,7 @@
     background-color: darken($color-orange, 20%);
   }
 
-  &:focus {
+  &:active {
     background-color: $color-orange;
   }
 }
